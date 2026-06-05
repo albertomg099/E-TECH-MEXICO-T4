@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to bottom right,#002147,#D5A1AF);
+    background-image: linear-gradient(to bottom right, #002147, #D5A1AF);
 }
 
 
@@ -19,9 +19,34 @@ h1 {
     font-size: x-large;
 }
 
+h1:hover {
+    animation: aparecer 1s ease-in-out infinite alternate;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .card {
+    scale: 1;
+    transition: scale 0.4s;
     background-color: #f4f4f680;
     border-color: #E65C84;
+}
+
+.card:hover {
+    scale: 1.1;
+    transition: scale 0.4s;
 }
 
 .card-title {
@@ -34,17 +59,21 @@ h1 {
     border-color: #E65C84;
 }
 
-footer{
+footer {
     background-color: #002147;
 }
 
-.btn-primary{
+.btn-primary {
+    scale: 1;
+    transition: scale 0.2s;
     color: white;
     background-color: #002147;
 
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     color: black;
     background-color: #E65C84;
+    scale: 1.1;
+    transition: scale 0.2s;
 }
