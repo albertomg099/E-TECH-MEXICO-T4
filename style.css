@@ -1,0 +1,39 @@
+body {
+    background-image: linear-gradient(to bottom right,#002147,#D5A1AF);
+}
+
+
+.main-logo-tech {
+    width: 5%;
+    align-items: center;
+}
+
+nav {
+    background-color: #E65C84;
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.card {
+    background-color: #f4f4f680;
+    border-color: #E65C84;
+}
+
+.card-title {
+    color: #E65C84;
+    font-family: 'Roboto', sans-serif;
+}
+
+.list-group-item {
+    background-color: #fad5e0;
+    border-color: #E65C84;
+}
+
+footer{
+    background-color: #002147;
+}
