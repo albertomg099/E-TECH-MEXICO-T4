@@ -1,27 +1,41 @@
-body {
-    background-image: linear-gradient(to bottom right, #002147, #D5A1AF);
+:root {
+    --color-azul-oscuro: #002147;
+    --color-rosa-claro: #FAD5E0;
+    --color-rosa-pastel: #D5A1AF;
+    --color-rosa-ajolote: #E65C84;
+
+    --color-tarjeta: #f4f4ff92;
 }
 
-
-.main-logo-tech {
-    width: 5%;
-    align-items: center;
+body {
+    background-image: linear-gradient(to bottom right, var(--color-rosa-pastel), var(--color-azul-oscuro));
 }
 
 nav {
-    background-color: #E65C84;
+    background-color: var(--color-rosa-claro);
 }
 
+h1,
+h2,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    color: var(--color-azul-oscuro);
     font-weight: 700;
-    font-size: x-large;
 }
 
-h1:hover {
+h2,
+h5,
+h6 {
+    color: white;
+}
+
+
+.text-logo:hover {
     animation: aparecer 1s ease-in-out infinite alternate;
-    font-family: sans-serif;
     text-align: center;
 }
 
@@ -40,8 +54,9 @@ h1:hover {
 .card {
     scale: 1;
     transition: scale 0.4s;
-    background-color: #f4f4f680;
-    border-color: #E65C84;
+    background-color: var(--color-tarjeta);
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
 }
 
 .card:hover {
@@ -50,30 +65,50 @@ h1:hover {
 }
 
 .card-title {
-    color: #E65C84;
+    color: var(--color-azul-oscuro);
     font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.card-text {
+    color: var(--color-rosa-ajolote);
+    font-weight: 500;
+}
+
+.card-link {
+    color: var(--color-azul-oscuro);
 }
 
 .list-group-item {
-    background-color: #fad5e0;
-    border-color: #E65C84;
+    border-color: #56565680;
 }
 
 footer {
-    background-color: #002147;
+    background-color: var(--color-azul-oscuro);
+
+}
+
+footer h6 {
+    font-weight: bold;
+}
+
+
+.btn-primary:active {
+    background-color: var(--color-rosa-claro) !important;
+    color: var(--color-azul-oscuro) !important;
 }
 
 .btn-primary {
     scale: 1;
     transition: scale 0.2s;
     color: white;
-    background-color: #002147;
-
+    background-color: var(--color-azul-oscuro);
+    border: none;
 }
 
 .btn-primary:hover {
-    color: black;
-    background-color: #E65C84;
+    color: var(--color-azul-oscuro);
+    background-color: var(--color-rosa-ajolote);
     scale: 1.1;
     transition: scale 0.2s;
 }
