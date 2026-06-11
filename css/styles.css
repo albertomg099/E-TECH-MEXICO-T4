@@ -11,8 +11,27 @@ body {
     background-image: linear-gradient(to bottom right, var(--color-rosa-pastel), var(--color-azul-oscuro));
 }
 
-nav {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
     background-color: var(--color-rosa-claro);
+}
+
+.nav-link{
+    color: var(--color-azul-oscuro) !important;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: var(--color-rosa-ajolote) !important;
+}
+
+.navbar-brand{
+    color: var(--color-azul-oscuro) !important;
 }
 
 h1,
